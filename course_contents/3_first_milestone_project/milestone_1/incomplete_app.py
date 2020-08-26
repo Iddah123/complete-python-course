@@ -1,10 +1,6 @@
-# Incomplete app!
-
 MENU_PROMPT = "\nEnter 'a' to add a movie, 'l' to see your movies, 'f' to find a movie by title, or 'q' to quit: "
+
 movies = []
-
-
-# You may want to create a function for this code
 title = input("Enter the movie title: ")
 director = input("Enter the movie director: ")
 year = input("Enter the movie release year: ")
@@ -16,12 +12,19 @@ movies.append({
 })
 
 
-# Create other functions for:
-#   - listing movies
-#   - finding movies
+while MENU_PROMPT !='q'
+    if MENU_PROMPT =='l'
+        print(movies)
+    if MENU_PROMPT == 'f'
+    input("Enter the movie title: ")
+    
 
+movies = []
+title = input("Enter movie title: ")
+director = input("Enter movie director: ")
+year = input("Enter the movie release year: ")
+                
 
-# And another function here for the user menu
 selection = input(MENU_PROMPT)
 while selection != 'q':
     if selection == "a":
@@ -36,4 +39,8 @@ while selection != 'q':
     selection = input(MENU_PROMPT)
 
 
-# Remember to run the user menu function at the end!
+movies = []
+title = input("Enter movie title: ")
+director = input("Enter movie director: ")
+year = input("Enter the movie release year: ")
+               
